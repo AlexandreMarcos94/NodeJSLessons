@@ -4,7 +4,7 @@
   "description": "*** Install dependencies: npm i *** Run: npm run dev",
   "main": "index.js",
   "scripts": {
-    "start": "npm start"
+    "start": "node index.mjs"
   },
   "author": "",
   "license": "ISC",
