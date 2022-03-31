@@ -14,5 +14,21 @@
   {
     "name": "orange",
     "quantity": 60
+  },
+  {
+    "name": "cerises",
+    "quantity": 10
+  },
+  {
+    "name": "Poire",
+    "quantity": 300
+  },
+  {
+    "name": "Chocolat",
+    "quantity": 750
+  },
+  {
+    "name": "Piment",
+    "quantity": 250
   }
 ]

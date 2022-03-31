@@ -30,8 +30,7 @@ const writeProducts = () => {
  * @param {string} p : product
  * @returns promise
  */
-const add = (name, quantity) => {
-  console.log(name, quantity)
+ const add = (name, quantity) => {
   loadProducts();
   const pdt = products.find((e) => e.name === name);
 
@@ -40,7 +39,7 @@ const add = (name, quantity) => {
       pdt.quantity += quantity;
     } else {
       console.log(`Manque la quantity pour ${name}`);
-      return;
+      return `Manque la quantity pour ${name}`;
     }
   } else {
     products.push({ name, quantity });
@@ -49,6 +48,7 @@ const add = (name, quantity) => {
   writeProducts();
 
   console.log(`${quantity} ${name} ajouté(e)(s)`);
+  return `${quantity} ${name} ajouté(e)(s)`;
 };
 
 /**

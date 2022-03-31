@@ -18,8 +18,8 @@ const getProductsAsync = async () => {
 
 const addProduct = (name, quantity) => {
     axios.post('http://localhost:3000/products', {
-        name: name,
-        quantity: quantity
+        name,
+        quantity
       })
       .then((response) => {
         console.log(response);
@@ -32,6 +32,5 @@ const addProduct = (name, quantity) => {
 (async () => {
     getProducts();
     const res = await getProductsAsync();
-    addProduct("Chocolat", 250);
+    addProduct("Piment", 250);
   })();
-
