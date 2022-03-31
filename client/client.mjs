@@ -21,5 +21,14 @@ const getProductsAsync = async () => {
 }
 
 const addProduct = (name, quantity) => {
-    axios.post("localhost:3000/products")
+    axios.post('localhost:3000/products', {
+        firstName: name,
+        lastName: quantity
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
 }
