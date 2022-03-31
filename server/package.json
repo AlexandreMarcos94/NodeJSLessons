@@ -2,7 +2,7 @@
   "name": "server",
   "version": "1.0.0",
   "description": "*** Install dependencies: npm i *** Run: npm run dev",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "start": "node index.mjs"
   },
