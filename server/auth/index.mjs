@@ -1,5 +1,5 @@
 import fs from 'fs'
-import jwt from 'somewebtoken'
+import jwt from 'jsonwebtoken'
 
 /**
  *
