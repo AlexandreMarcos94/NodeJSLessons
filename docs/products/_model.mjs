@@ -1,6 +1,6 @@
 export default {
 products: {
-    type: "Object",
+    type: "object",
     properties: {
         name: {
             type: "string",
@@ -15,7 +15,7 @@ products: {
     },
 },
 Products: {
-    type: "Object",
+    type: "object",
     additionalProperties: { $ref: "#/components/schema/product" },
 } 
 }
