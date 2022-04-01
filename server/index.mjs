@@ -17,4 +17,3 @@ app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(docs))
 app.listen(port, () => {
   console.log(`server listen at ${port}`)
 })
-

@@ -1,4 +1,4 @@
-import getAll from "./getAll.mjs";
+//import getAll from "./getAll.mjs";
 import schema from "./_model.mjs";
 
 export default {
@@ -6,8 +6,8 @@ export default {
         // "/products": {
         //     ...getAll,
         // },
-        schema: {
-            ...schema,
-        },
+    },
+    schemas: {
+        ...schema,
     },
 };
