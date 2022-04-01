@@ -4,8 +4,7 @@ import bodyparser from 'body-parser'
 import morgan from 'morgan'
 import swaggerUI from 'swagger-ui-express'
 import docs from '../docs/index.mjs'
-import 'dotenv'
-
+import env from 'dotenv'
 
 env.config()
 const port = process.env.PORT || 3000

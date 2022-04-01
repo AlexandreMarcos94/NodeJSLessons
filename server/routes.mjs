@@ -22,6 +22,12 @@ router.post('/products', (req, res) => {
     res.send('ajout ok')
 })
 
+router.post('/auth', (req, res) => {
+    const { name, password } = req.body
+    const resu = auth(name, password)
+    res.send(resu)
+})
+
 router.delete('/products/:name', (req, res) => {
     let quantity = 0
     const name = req.params.name
