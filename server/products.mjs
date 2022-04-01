@@ -30,7 +30,7 @@ const writeProducts = () => {
  * @param {string} p : product
  * @returns promise
  */
- const add = (name, quantity) => {
+const add = (name, quantity) => {
   loadProducts();
   const pdt = products.find((e) => e.name === name);
 

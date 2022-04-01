@@ -1,25 +1,25 @@
-import express from "express"
-import { add, getAll, getByName, remove } from "./products.mjs"
+import express from "express";
+import { add, getAll, getByName, remove } from "./products.mjs";
 
 const router = express.Router()
 
 router.get('/', (_, res) => {
-    res.send('/products/name => un produit spé & /products => tout les produits')
+    res.send('/products/name => un produit spé & /products => tout les produits');
 })
 
 router.get('/products', (_, res) => {
     res.send(getAll())
-})
+});
 
 router.get('/products/:name', (req, res) => {
     const name = req.params.name
     res.send(getByName(req.params.name))
-})
+});
 
 router.post('/products', (req, res) => {
     const { name, quantity } = req.body
     add(name, quantity)
-    res.send("ajout ok")
+    res.send('ajout ok');
 })
 
 router.delete('/products/:name', (req, res) => {
@@ -29,13 +29,12 @@ router.delete('/products/:name', (req, res) => {
         quantity = req.query.quantity
         const check = remove(name, quantity)
         if (check) {
-            res.send("delete success")
+            res.send('delete success');
         } else {
-            res.send("check name or quantity")
+            res.send('check name or quantity');
         }
-    }
-    else {
-        res.send("cant delete without quantity")
+    } else {
+        res.send('cant delete without quantity');
     }
 })
 
