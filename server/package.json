@@ -4,7 +4,8 @@
   "description": "*** Install dependencies: npm i *** Run: npm run dev",
   "main": "index.mjs",
   "scripts": {
-    "start": "node index.mjs"
+    "start": "node index.mjs",
+    "dev": "nodemon index.mjs --ignore products.json"
   },
   "author": "",
   "license": "ISC",

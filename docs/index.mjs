@@ -9,5 +9,19 @@ export default {
             email: "info@esgi.fr",
             url: "https://esgi.fr"
         }
-    }
+    },
+    servers: [
+        {
+            url: "http://localhost:3000/api-docs",
+            description: "Local Server",
+    },
+],
+    paths: {
+        ...products.path,
+    },
+    components: {
+        schemas: {
+            ...products.schema,
+        },
+    },
 };

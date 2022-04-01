@@ -12,11 +12,9 @@ app.use(bodyparser.json())
 app.use(morgan('tiny'))
 
 app.use(router)
-app.use("/swagger", swaggerUI.serve, swaggerUI.setup(docs))
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(docs))
 
 app.listen(port, () => {
   console.log(`server listen at ${port}`)
 })
-
-
 
