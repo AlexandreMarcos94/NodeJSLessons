@@ -5,6 +5,7 @@
     "postinstall": "npm install --prefix server"
   },
   "devDependencies": {
+    "dotenv": "^16.0.0",
     "prettier": "^2.6.1"
   }
 }
